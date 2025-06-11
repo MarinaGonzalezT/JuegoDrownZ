@@ -46,6 +46,7 @@ public class EnemyAI : MonoBehaviour
 
         if (isChasing && distance > loseRange)
         {
+            animator.SetBool("seePlayer", false);
             agent.SetDestination(patrolPoints[currentPatrolIndex].position);
             agent.speed = 2.2f;
 
@@ -53,7 +54,7 @@ public class EnemyAI : MonoBehaviour
         } 
         else
         {
-            if (distance > chaseRange)
+            if (distance > chaseRange && !isChasing)
             {
                 PatrolBehavior();
             }
@@ -119,6 +120,5 @@ public class EnemyAI : MonoBehaviour
     public void Die()
     {
         isDead = true;
-        agent.isStopped = true;
     }
 }
