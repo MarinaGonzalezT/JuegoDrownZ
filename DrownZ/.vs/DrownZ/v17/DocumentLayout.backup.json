@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\own scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D8C04FF-D29D-C026-F008-5A8390CCB6F8}|Assembly-CSharp-Editor.csproj|c:\\users\\marinagt\\documents\\juegofinalpv\\juegodrownz\\drownz\\assets\\fps_cowsins\\scripts\\editor\\experimental\\draggablebuttoninsceneview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D8C04FF-D29D-C026-F008-5A8390CCB6F8}|Assembly-CSharp-Editor.csproj|C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\assets\\fps_cowsins\\scripts\\editor\\experimental\\draggablebuttoninsceneview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D8C04FF-D29D-C026-F008-5A8390CCB6F8}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\fps_cowsins\\scripts\\editor\\experimental\\draggablebuttoninsceneview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Assets\\Own Scripts\\EnemyAI.cs",
               "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\EnemyAI.cs",
               "RelativeToolTip": "Assets\\Own Scripts\\EnemyAI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T10:55:02.67Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Assets\\FPS_Cowsins\\Scripts\\Editor\\Experimental\\DraggableButtonInSceneView.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAiwEQAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:35:18.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T10:35:18.749Z"
             },
             {
               "$type": "Document",
