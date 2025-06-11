@@ -17,6 +17,7 @@ public class EnemyAI : MonoBehaviour
     private bool isWaiting = false;
     private float waitTimer = 0f;
     private bool isChasing = false;
+    private bool isAttacked = false;
 
     private Animator animator;
     private bool isDead = false;
@@ -37,7 +38,7 @@ public class EnemyAI : MonoBehaviour
         float distance = Vector3.Distance(transform.position, player.position);
         animator.SetFloat("distanceToPlayer", distance);
 
-        if (isChasing && distance > loseRange)
+        if (isChasing && distance > loseRange && !isAttacked)
         {
             animator.SetBool("seePlayer", false);
             agent.SetDestination(patrolPoints[currentPatrolIndex].position);
@@ -117,4 +118,15 @@ public class EnemyAI : MonoBehaviour
         agent.isStopped = true;
         return;
     }
+
+    public void ForceChasePlayer()
+    {
+        isAttacked = true;
+        isChasing = true;
+        agent.isStopped = false;
+        animator.SetBool("seePlayer", true);
+        agent.speed = 4.2f;
+        agent.SetDestination(player.position);
+    }
+
 }
