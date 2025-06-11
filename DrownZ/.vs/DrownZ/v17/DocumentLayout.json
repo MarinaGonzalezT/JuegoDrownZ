@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|c:\\users\\marinagt\\documents\\juegofinalpv\\juegodrownz\\drownz\\assets\\own scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\own scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8C04FF-D29D-C026-F008-5A8390CCB6F8}|Assembly-CSharp-Editor.csproj|c:\\users\\marinagt\\documents\\juegofinalpv\\juegodrownz\\drownz\\assets\\fps_cowsins\\scripts\\editor\\experimental\\draggablebuttoninsceneview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D8C04FF-D29D-C026-F008-5A8390CCB6F8}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\fps_cowsins\\scripts\\editor\\experimental\\draggablebuttoninsceneview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\assets\\flooded_grounds\\postprocessing\\runtime\\components\\motionblurcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\flooded_grounds\\postprocessing\\runtime\\components\\motionblurcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyAI.cs",
+              "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\EnemyAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Own Scripts\\EnemyAI.cs",
+              "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\EnemyAI.cs",
+              "RelativeToolTip": "Assets\\Own Scripts\\EnemyAI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:55:02.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DraggableButtonInSceneView.cs",
+              "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\Editor\\Experimental\\DraggableButtonInSceneView.cs",
+              "RelativeDocumentMoniker": "Assets\\FPS_Cowsins\\Scripts\\Editor\\Experimental\\DraggableButtonInSceneView.cs",
+              "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\Editor\\Experimental\\DraggableButtonInSceneView.cs",
+              "RelativeToolTip": "Assets\\FPS_Cowsins\\Scripts\\Editor\\Experimental\\DraggableButtonInSceneView.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAiwEQAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:35:18.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MotionBlurComponent.cs",
+              "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Flooded_Grounds\\PostProcessing\\Runtime\\Components\\MotionBlurComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\Flooded_Grounds\\PostProcessing\\Runtime\\Components\\MotionBlurComponent.cs",
+              "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Flooded_Grounds\\PostProcessing\\Runtime\\Components\\MotionBlurComponent.cs",
+              "RelativeToolTip": "Assets\\Flooded_Grounds\\PostProcessing\\Runtime\\Components\\MotionBlurComponent.cs",
+              "ViewState": "AgIAAEMBAAAAAAAAAAAowF0BAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:34:34.981Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
