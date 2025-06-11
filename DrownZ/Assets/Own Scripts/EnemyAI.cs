@@ -17,9 +17,9 @@ public class EnemyAI : MonoBehaviour
     private bool isWaiting = false;
     private float waitTimer = 0f;
     private bool isChasing = false;
+    private bool isDead = false;
 
     private Animator animator;
-    private bool isDead = false;
 
     void Start()
     {
@@ -34,13 +34,6 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (isDead)
-        {
-            animator.SetBool("isDead", true);
-            agent.isStopped = true;
-            return;
-        }
-
         float distance = Vector3.Distance(transform.position, player.position);
         animator.SetFloat("distanceToPlayer", distance);
 
@@ -51,33 +44,31 @@ public class EnemyAI : MonoBehaviour
             agent.speed = 2.2f;
 
             isChasing = false;
-        } 
+        }
+
+        if (distance > chaseRange && !isChasing)
+        {
+            PatrolBehavior();
+        }
+        else if (distance > attackRange && !isDead)
+        {
+            isChasing = true;
+
+            // Correr hacia el jugador
+            animator.SetBool("seePlayer", true);
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isAttacking", false);
+
+            agent.isStopped = false;
+            agent.speed = 4.2f;
+            agent.SetDestination(player.position);
+        }
         else
         {
-            if (distance > chaseRange && !isChasing)
-            {
-                PatrolBehavior();
-            }
-            else if (distance > attackRange)
-            {
-                isChasing = true;
-
-                // Correr hacia el jugador
-                animator.SetBool("seePlayer", true);
-                animator.SetBool("isWalking", false);
-                animator.SetBool("isAttacking", false);
-
-                agent.isStopped = false;
-                agent.speed = 4.2f;
-                agent.SetDestination(player.position);
-            }
-            else
-            {
-                // Atacar
-                animator.SetBool("isAttacking", true);
-                animator.SetTrigger("attackAlt");
-                agent.isStopped = true;
-            }
+            // Atacar
+            animator.SetBool("isAttacking", true);
+            animator.SetTrigger("attackAlt");
+            agent.isStopped = true;
         }
     }
 
@@ -120,5 +111,17 @@ public class EnemyAI : MonoBehaviour
     public void Die()
     {
         isDead = true;
+        isChasing = false;
+
+        agent.isStopped = true;
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isAttacking", false);
+        animator.SetBool("seePlayer", false);
+        animator.SetBool("isDead", true);
+        animator.SetTrigger("die");
+
+        Destroy(gameObject, 1.5f);
+
+        return;
     }
 }
