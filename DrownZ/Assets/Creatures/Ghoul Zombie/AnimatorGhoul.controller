@@ -84,7 +84,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: attachAlt
+    m_ConditionEvent: attackAlt
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5406547510768074380}
@@ -147,7 +147,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: attachAlt
+    m_ConditionEvent: attackAlt
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2917229570971058704}
@@ -299,7 +299,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: attachAlt
+  - m_Name: attackAlt
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
