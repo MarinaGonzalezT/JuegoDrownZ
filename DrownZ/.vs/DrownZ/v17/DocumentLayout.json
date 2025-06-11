@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|c:\\users\\marinagt\\documents\\juegofinalpv\\juegodrownz\\drownz\\assets\\own scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\own scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|c:\\users\\marinagt\\documents\\juegofinalpv\\juegodrownz\\drownz\\assets\\fps_cowsins\\scripts\\enemies\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\fps_cowsins\\scripts\\enemies\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EnemyHealth.cs",
-              "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\Enemies\\EnemyHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\FPS_Cowsins\\Scripts\\Enemies\\EnemyHealth.cs",
-              "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\Enemies\\EnemyHealth.cs",
-              "RelativeToolTip": "Assets\\FPS_Cowsins\\Scripts\\Enemies\\EnemyHealth.cs",
-              "ViewState": "AgIAABkBAAAAAAAAAAAAwEUBAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T15:50:55.181Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -41,7 +24,7 @@
               "RelativeDocumentMoniker": "Assets\\Own Scripts\\EnemyAI.cs",
               "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\EnemyAI.cs",
               "RelativeToolTip": "Assets\\Own Scripts\\EnemyAI.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAYwHoAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwCsAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T15:04:59.754Z",
               "EditorCaption": ""
