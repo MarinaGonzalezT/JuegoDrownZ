@@ -1,0 +1,61 @@
+# Archivos generados por Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# VS / VSCode
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+
+# Rider
+.idea/
+*.sln.iml
+
+# Archivos de Unity relacionados con la cache y configuraciones locales
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.dwlt
+
+
+# Collab
+.collab/
+
+# Configuración de paquetes y dependencias
+Packages/packages-lock.json
+
+# Archivos de build en WebGL
+Build/
+
+# Configuración del sistema operativo
+*.swp
+
+# Plastic SCM
+.plastic/
+ignore.conf
+/DrownZ/UserSettings
+DrownZ/UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+DrownZ/UserSettings/Layouts/default-6000.dwlt
+DrownZ/UserSettings/EditorUserSettings.asset
+DrownZ/UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+DrownZ/UserSettings/Layouts/default-6000.dwlt
+DrownZ/UserSettings/Search.settings
+DrownZ/UserSettings/Search.settings
+DrownZ/UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+DrownZ/UserSettings/EditorUserSettings.asset
