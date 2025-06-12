@@ -1138,6 +1138,8 @@ MonoBehaviour:
   chaseRange: 15
   loseRange: 25
   waitTime: 1
+  experiencePrefabs: {fileID: 3821068731288931261, guid: 5144d72f9767e2f4aacd4ed8fdf87ad0, type: 3}
+  countXP: 3
 --- !u!195 &233756045650623775
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -157,6 +157,13 @@ namespace cowsins
             UIEvents.onHealthChanged?.Invoke(health, shield, false);
         }
 
+        public void IncreaseMaxHealth(float amount)
+        {
+            maxHealth += amount;
+            health = maxHealth;
+            UIEvents.onHealthChanged?.Invoke(health, shield, false);
+        }
+
         /// <summary>
         /// Perform any actions On death
         /// </summary>

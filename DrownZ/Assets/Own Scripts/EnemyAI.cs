@@ -13,14 +13,16 @@ public class EnemyAI : MonoBehaviour
     public float chaseRange = 10f;
     public float loseRange = 20f;
     public float waitTime = 2f;
+    public GameObject experiencePrefabs;
+    public int countXP = 1;
 
     private bool isWaiting = false;
     private float waitTimer = 0f;
     private bool isChasing = false;
     private bool isAttacked = false;
+    private bool isDead = false;
 
     private Animator animator;
-    private bool isDead = false;
 
     void Start()
     {
@@ -116,6 +118,9 @@ public class EnemyAI : MonoBehaviour
         animator.SetBool("isDead", true);
         animator.SetTrigger("die");
         agent.isStopped = true;
+
+        Invoke(nameof(DropExperience), 3f);
+
         return;
     }
 
@@ -129,4 +134,19 @@ public class EnemyAI : MonoBehaviour
         agent.SetDestination(player.position);
     }
 
+    private void DropExperience()
+    {
+        for (int i = 0; i < countXP; i++)
+        {
+            Vector3 offset = Random.insideUnitCircle * 1.5f;
+            offset.y = 0.5f;
+            Vector3 spawnPosition = transform.position + offset;
+
+            GameObject experience = Instantiate(
+                experiencePrefabs,
+                spawnPosition,
+                Quaternion.identity
+             );
+        }
+    }
 }

@@ -11,6 +11,8 @@ namespace cowsins
         public float[] experienceRequirements;
 
         private float totalExperience;
+        private PlayerStats playerStats;
+        private float healthIncrease = 5f;
 
         private void OnEnable()
         {
@@ -45,6 +47,12 @@ namespace cowsins
             while (playerLevel < experienceRequirements.Length - 1 && totalExperience >= experienceRequirements[playerLevel])
             {
                 playerLevel++;
+                playerStats = FindFirstObjectByType<PlayerStats>();
+                if (playerStats != null)
+                {
+
+                    playerStats.IncreaseMaxHealth(healthIncrease);
+                }
             }
         }
 

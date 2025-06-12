@@ -154,7 +154,7 @@ namespace cowsins
                 UIEvents.onEnemyKilled.Invoke(_name);
             }
             if (deathEffect) Instantiate(deathEffect, transform.position, Quaternion.identity);
-            if (destroyOnDie) Destroy(this.gameObject, 1.5f);
+            if (destroyOnDie) Destroy(this.gameObject, 3f);
         }
 
         public void PlayAnimation(string triggerIdentifier)
