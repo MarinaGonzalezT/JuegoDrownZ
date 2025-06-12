@@ -28,7 +28,15 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        if(gameObject.name.Contains("Creep"))
+        {
+            animator = GetComponentInChildren<Animator>();
+        }
+        else
+        {
+            animator = GetComponent<Animator>();
+        }
+        
         agent = GetComponent<NavMeshAgent>();
 
         if (patrolPoints.Length > 0)
@@ -72,7 +80,6 @@ public class EnemyAI : MonoBehaviour
                 reproducido = true;
             }
             
-
             agent.isStopped = false;
             agent.speed = 4.2f;
             agent.SetDestination(player.position);
