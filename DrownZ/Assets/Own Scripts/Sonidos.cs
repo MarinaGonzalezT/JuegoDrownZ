@@ -5,9 +5,13 @@ public class Sonidos : MonoBehaviour
 {
     private AudioClip sonidoMordida;
     private AudioClip sonidoMuerte;
+    public AudioClip sonidoMuerteGhoul;
+    public AudioClip sonidoMuerteCreep;
     private AudioClip sonidoHerido;
 
     public AudioClip[] sonidoGhoul;
+
+    public AudioClip[] sonidoCreep;
 
     public SoundManager soundManager;
 
@@ -18,6 +22,9 @@ public class Sonidos : MonoBehaviour
         sonidoMordida = Resources.Load<AudioClip>("Impact_Flesh_Gory_Light_002");
         sonidoMuerte = Resources.Load<AudioClip>("Foley_BodyFall_003");
         sonidoGhoul = GetComponent<AudioClip[]>();
+        sonidoCreep = GetComponent<AudioClip[]>();
+        sonidoMuerteGhoul = GetComponent<AudioClip>();
+        sonidoMuerteCreep = GetComponent<AudioClip>();
     }
     public void ReproducirSonidoMordida()
     {
@@ -29,6 +36,16 @@ public class Sonidos : MonoBehaviour
         soundManager.PlaySound(sonidoMuerte, 0, 0, false, 1);
     }
 
+    public void ReproducirSonidoMuerteGhoul()
+    {
+        soundManager.PlaySound(sonidoMuerteGhoul, 0, 0, false, 1);
+    }
+
+    public void ReproducirSonidoMuerteCreep()
+    {
+        soundManager.PlaySound(sonidoMuerteCreep, 0, 0, false, 1);
+    }
+
     public void ReproducirSonidoHerido()
     {
         soundManager.PlaySound(sonidoHerido, 0, 0, false, 1);
@@ -36,7 +53,13 @@ public class Sonidos : MonoBehaviour
 
     public void ReproducirSonidoGhoul()
     {
-        AudioClip grunyidos = sonidoGhoul[Random.Range(0, sonidoGhoul.Length)];
-        soundManager.PlaySound(grunyidos, 0, 0, false, 1);
+        AudioClip grunyidosGhoul = sonidoGhoul[Random.Range(0, sonidoGhoul.Length)];
+        soundManager.PlaySound(grunyidosGhoul, 0, 0, false, 1);
+    }
+
+    public void ReproducirSonidoCreep()
+    {
+        AudioClip grunyidosCreep = sonidoCreep[Random.Range(0, sonidoCreep.Length)];
+        soundManager.PlaySound(grunyidosCreep, 0, 0, false, 1);
     }
 }

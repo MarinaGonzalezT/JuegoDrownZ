@@ -1261,6 +1261,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 3540840454845783218}
+          m_TargetAssemblyTypeName: Sonidos, Assembly-CSharp
+          m_MethodName: ReproducirSonidoMuerteGhoul
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &5743088018409223750
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1370,10 +1382,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292a47f332b0bfd4b9838271e9f92868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMuerteGhoul: {fileID: 8300000, guid: f462d308fc6a648b288adb78161502a5, type: 3}
+  sonidoMuerteCreep: {fileID: 8300000, guid: 50be8f631d6a14da58b3ef230ec1c022, type: 3}
   sonidoGhoul:
-  - {fileID: 8300000, guid: f462d308fc6a648b288adb78161502a5, type: 3}
-  - {fileID: 8300000, guid: 824a492d546744169b7e4460926ebb2a, type: 3}
-  - {fileID: 8300000, guid: 05f860bb66f844d89908829a80c6fe13, type: 3}
+  - {fileID: 8300000, guid: 5b29b0de6b62747e68ebf332c8811f35, type: 3}
+  - {fileID: 8300000, guid: 4ab62cbf20de44a4582c40ed442be13a, type: 3}
+  - {fileID: 8300000, guid: ecff13b727eaf4888a9f6a3221bdb662, type: 3}
+  sonidoCreep:
+  - {fileID: 8300000, guid: fb7fbee5d5ed64bd1a8ca1ad242ba7eb, type: 3}
+  - {fileID: 8300000, guid: 381951b7e211640659f2659520c3145b, type: 3}
+  - {fileID: 8300000, guid: 967208deb0e2849fdaf89dcc7413d1a9, type: 3}
   soundManager: {fileID: 0}
 --- !u!1 &1312574273513674
 GameObject:
