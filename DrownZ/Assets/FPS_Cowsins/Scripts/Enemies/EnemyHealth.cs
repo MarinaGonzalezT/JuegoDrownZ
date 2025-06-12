@@ -147,7 +147,7 @@ namespace cowsins
             // Custom event on damaged
             events.OnDeath.Invoke();
 
-            SoundManager.Instance.PlaySound(dieSFX, 0, 1, false, 0);
+            //SoundManager.Instance.PlaySound(dieSFX, 0, 1, false, 0);
             // Does it display killfeed on death? 
             if (showKillFeed)
             {

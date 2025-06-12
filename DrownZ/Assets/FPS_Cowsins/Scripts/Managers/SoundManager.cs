@@ -12,6 +12,7 @@ namespace cowsins
             if (Instance == null)
             {
                 Instance = this;
+                DontDestroyOnLoad(this.gameObject);
                 transform.parent = null;
             }
             else Destroy(this.gameObject);
@@ -31,7 +32,8 @@ namespace cowsins
             src.spatialBlend = spatialBlend;
             float pitchAdded = randomPitch ? Random.Range(-pitch, pitch) : pitch;
             src.pitch = 1 + pitchAdded;
-            src.PlayOneShot(clip);
+            if(clip)
+                src.PlayOneShot(clip);
             yield return null;
         }
     }

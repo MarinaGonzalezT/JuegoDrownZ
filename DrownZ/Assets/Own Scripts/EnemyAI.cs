@@ -24,6 +24,8 @@ public class EnemyAI : MonoBehaviour
 
     private Animator animator;
 
+    private bool reproducido = false;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -61,6 +63,15 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("seePlayer", true);
             animator.SetBool("isWalking", false);
             animator.SetBool("isAttacking", false);
+
+            Sonidos soundManager = GetComponent<Sonidos>();
+    
+            if (soundManager != null && !reproducido)
+            {
+                soundManager.ReproducirSonidoGhoul();
+                reproducido = true;
+            }
+            
 
             agent.isStopped = false;
             agent.speed = 4.2f;
@@ -118,7 +129,6 @@ public class EnemyAI : MonoBehaviour
         animator.SetBool("isDead", true);
         animator.SetTrigger("die");
         agent.isStopped = true;
-
         Invoke(nameof(DropExperience), 3f);
 
         return;
