@@ -22,6 +22,11 @@ public class EnemyAI : MonoBehaviour
     private bool isAttacked = false;
     private bool isDead = false;
 
+    // Para no patrullar
+    private enum CreepState { Idle, Sniffing, Eating }
+    private CreepState creepState = CreepState.Idle;
+    private bool isReturning = false;
+
     private Animator animator;
 
     private bool reproducido = false;
@@ -55,13 +60,15 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("seePlayer", false);
             agent.SetDestination(patrolPoints[currentPatrolIndex].position);
             agent.speed = 2.2f;
+            isReturning = true;
 
             isChasing = false;
         }
 
         if (distance > chaseRange && !isChasing)
         {
-            PatrolBehavior();
+            if (patrolPoints.Length == 1) NoPatrol();
+            else PatrolBehavior();
         }
         else if (distance > attackRange && !isDead)
         {
@@ -129,6 +136,64 @@ public class EnemyAI : MonoBehaviour
             }
         }
     }
+
+    private void NoPatrol()
+    {
+        agent.isStopped = true;
+        animator.SetBool("isWalking", false);
+        animator.SetBool("seePlayer", false);
+        animator.SetBool("isAttacking", false);
+
+        if(!isReturning)
+        {
+            waitTimer += Time.deltaTime;
+
+            switch (creepState)
+            {
+                case CreepState.Idle:
+                    if (waitTimer >= waitTime)
+                    {
+                        waitTimer = 0f;
+                        creepState = CreepState.Sniffing;
+                        animator.SetBool("isSniffing", true);
+                        animator.SetBool("isEating", false);
+                    }
+                    break;
+
+                case CreepState.Sniffing:
+                    if (waitTimer >= waitTime + 2)
+                    {
+                        waitTimer = 0f;
+                        creepState = CreepState.Eating;
+                        animator.SetBool("isSniffing", false);
+                        animator.SetBool("isEating", true);
+                    }
+                    break;
+
+                case CreepState.Eating:
+                    if (waitTimer >= waitTime + 2.4)
+                    {
+                        waitTimer = 0f;
+                        creepState = CreepState.Idle;
+                        animator.SetBool("isEating", false);
+                        animator.SetBool("isSniffing", false);
+                    }
+                    break;
+            }
+        }
+        else
+        {
+            agent.isStopped = false;
+            animator.SetBool("isWalking", true);
+            agent.SetDestination(patrolPoints[currentPatrolIndex].position);
+            if (agent.remainingDistance < 0.5f)
+            {
+                isReturning = false;
+                creepState = CreepState.Idle;
+            }
+        }
+    }
+
     public void Die()
     {
         isDead = true;

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1002845285655053126}
   - component: {fileID: 2604191828497487045}
   m_Layer: 0
-  m_Name: CreepCrouch
+  m_Name: CreepNoPatrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 0}
   - {fileID: 0}
   player: {fileID: 0}
   attackRange: 3.5
@@ -512,7 +511,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 055d3fd7bd3901042a44bb13f3160e0e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5941253274397142514}
+      addedObject: {fileID: 7440230004507457928}
     - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: 055d3fd7bd3901042a44bb13f3160e0e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2373615981618856333}
@@ -560,7 +559,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.0052032485, y: 0.006975229, z: 0.005641447}
-  m_Center: {x: 0.00045518932, y: 0.01131908, z: -0.002817009}
+  m_Center: {x: 0.00045518926, y: 0.009539464, z: -0.0028169996}
 --- !u!114 &231347995094016283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,7 +583,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 055d3fd7bd3901042a44bb13f3160e0e, type: 3}
   m_PrefabInstance: {fileID: 4907239045874566849}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &5941253274397142514
+--- !u!95 &7440230004507457928
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -594,7 +593,7 @@ Animator:
   m_GameObject: {fileID: 5249906581416115088}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 842147bde32060242bed15955003c614, type: 2}
+  m_Controller: {fileID: 9100000, guid: c17fd0abdf1a88d4f877f7c124de22f4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
