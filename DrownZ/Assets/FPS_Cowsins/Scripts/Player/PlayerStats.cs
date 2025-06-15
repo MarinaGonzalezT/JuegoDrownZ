@@ -236,7 +236,7 @@ namespace cowsins
 
         public void CheckIfCanGrantControl()
         {
-            if (PauseMenu.isPaused || isDead) return;
+            if (PauseMenu.isPaused || isDead || IntroNarrative.isInit) return;
             GrantControl();
         }
 
