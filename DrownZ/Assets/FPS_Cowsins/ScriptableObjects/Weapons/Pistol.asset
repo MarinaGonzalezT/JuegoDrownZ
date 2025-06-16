@@ -36,7 +36,7 @@ MonoBehaviour:
   coolSpeed: 0.3
   cooledPercentageAfterOverheat: 0.6
   infiniteBullets: 0
-  magazineSize: 17
+  magazineSize: 6
   bulletsPerFire: 1
   ammoCostPerFire: 1
   bulletRange: 100

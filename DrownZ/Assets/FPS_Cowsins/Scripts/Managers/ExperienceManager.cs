@@ -52,6 +52,7 @@ namespace cowsins
                 {
 
                     playerStats.IncreaseMaxHealth(healthIncrease);
+                    playerStats.events.OnHeal.Invoke();
                 }
             }
         }

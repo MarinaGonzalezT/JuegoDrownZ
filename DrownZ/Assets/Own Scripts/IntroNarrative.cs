@@ -33,7 +33,7 @@ namespace cowsins
 
         private void Start()
         {
-            // Verificar si ya se mostró la intro antes
+            // Verificar si ya se mostrï¿½ la intro antes
             //if (PlayerPrefs.HasKey(IntroKey))
             //{
             //    gameObject.SetActive(false);

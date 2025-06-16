@@ -9,6 +9,8 @@ public class Sonidos : MonoBehaviour
     public AudioClip sonidoMuerteCreep;
     private AudioClip sonidoHerido;
 
+    private AudioClip sonidoCuracion;
+
     public AudioClip[] sonidoGhoul;
 
     public AudioClip[] sonidoCreep;
@@ -21,34 +23,31 @@ public class Sonidos : MonoBehaviour
         sonidoHerido = Resources.Load<AudioClip>("Impact_Flesh_Gory_Light_001");
         sonidoMordida = Resources.Load<AudioClip>("Impact_Flesh_Gory_Light_002");
         sonidoMuerte = Resources.Load<AudioClip>("Foley_BodyFall_003");
-        sonidoGhoul = GetComponent<AudioClip[]>();
-        sonidoCreep = GetComponent<AudioClip[]>();
-        sonidoMuerteGhoul = GetComponent<AudioClip>();
-        sonidoMuerteCreep = GetComponent<AudioClip>();
+        sonidoCuracion = Resources.Load<AudioClip>("HealthUp Sound");
     }
     public void ReproducirSonidoMordida()
     {
-        soundManager.PlaySound(sonidoMordida, 0, 0, false, 1);
+        soundManager.PlaySound(sonidoMordida, 0, 0, false, 0);
     }
 
     public void ReproducirSonidoMuerte()
     {
-        soundManager.PlaySound(sonidoMuerte, 0, 0, false, 1);
+        soundManager.PlaySound(sonidoMuerte, 0, 0, false, 0);
     }
 
     public void ReproducirSonidoMuerteGhoul()
     {
-        soundManager.PlaySound(sonidoMuerteGhoul, 0, 0, false, 1);
+        soundManager.PlaySound(sonidoMuerteGhoul, 0, 0, false, 0);
     }
 
     public void ReproducirSonidoMuerteCreep()
     {
-        soundManager.PlaySound(sonidoMuerteCreep, 0, 0, false, 1);
+        soundManager.PlaySound(sonidoMuerteCreep, 0, 0, false, 0);
     }
 
     public void ReproducirSonidoHerido()
     {
-        soundManager.PlaySound(sonidoHerido, 0, 0, false, 1);
+        soundManager.PlaySound(sonidoHerido, 0, 0, false, 0);
     }
 
     public void ReproducirSonidoGhoul()
@@ -61,5 +60,10 @@ public class Sonidos : MonoBehaviour
     {
         AudioClip grunyidosCreep = sonidoCreep[Random.Range(0, sonidoCreep.Length)];
         soundManager.PlaySound(grunyidosCreep, 0, 0, false, 1);
+    }
+
+    public void ReproducirSonidoCuracion()
+    {
+        soundManager.PlaySound(sonidoCuracion, 0, 0, false, 0);
     }
 }
