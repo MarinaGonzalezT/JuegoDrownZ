@@ -4967,7 +4967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minXp: 50
-  maxXp: 100
+  maxXp: 50
   pickUpSFX: {fileID: 8300000, guid: bc4c31f8d95dda74db5572d615ba98ef, type: 3}
   onCollect:
     m_PersistentCalls:
