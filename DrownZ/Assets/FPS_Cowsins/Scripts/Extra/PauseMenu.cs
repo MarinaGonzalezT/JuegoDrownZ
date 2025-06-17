@@ -52,8 +52,6 @@ namespace cowsins
 
         private void HandlePauseInput()
         {
-            if (IntroNarrative.isInit) return;
-
             if (InputManager.pausing)
             {
                 TogglePause();

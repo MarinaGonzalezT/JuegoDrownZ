@@ -8,7 +8,10 @@ namespace cowsins
     public class IntroNarrative : MonoBehaviour
     {
         [Header("Referencias UI")]
-        [SerializeField] public CanvasGroup canvasGroup;
+        [SerializeField] private CanvasGroup canvasGroup;
+        [SerializeField] private CanvasGroup playerUIGroup;
+        [SerializeField] private Crosshair crosshair;
+        public GameObject skipButton;
         public GameObject[] textos;
         public GameObject[] botones;
         public Image logoImage;
@@ -22,28 +25,44 @@ namespace cowsins
         private PlayerStats playerStats;
         private bool finalized = false;
 
-        private const string IntroKey = "IntroShown";
+        private static bool hasBeenShown = false;
 
         public static bool isInit { get; private set; }
 
-        private void Awake()
-        {
-            isInit = true;
-        }
-
         private void Start()
         {
-            // Verificar si ya se mostr� la intro antes
-            //if (PlayerPrefs.HasKey(IntroKey))
-            //{
-            //    gameObject.SetActive(false);
-            //    return;
-            //}
+            if (hasBeenShown)
+            {
+                canvasGroup.gameObject.SetActive(false);
+                playerUIGroup.alpha = 1;
+                playerUIGroup.interactable = true;
+                playerUIGroup.blocksRaycasts = true;
 
-            foreach (var t in textos) t.SetActive(false);
-            foreach (var b in botones) b.SetActive(false);
+                if (crosshair != null)
+                    crosshair.SetVisibility(true);
 
-            StartCoroutine(ShowTextCoroutine());
+                isInit = false;
+                finalized = true;
+            }
+            else
+            {
+                isInit = true;
+
+                playerUIGroup.alpha = 0;
+                playerUIGroup.interactable = false;
+                playerUIGroup.blocksRaycasts = false;
+
+                if (crosshair != null)
+                    crosshair.SetVisibility(false);
+
+                if (skipButton != null)
+                    skipButton.SetActive(true);
+
+                foreach (var t in textos) t.SetActive(false);
+                foreach (var b in botones) b.SetActive(false);
+
+                StartCoroutine(ShowTextCoroutine());
+            }
         }
 
         private void Update()
@@ -129,9 +148,32 @@ namespace cowsins
 
             // Finalizar
             isInit = false;
-            canvasGroup.gameObject.SetActive(false);
+            hasBeenShown = true;
 
-            PlayerPrefs.SetInt(IntroKey, 1);
+            canvasGroup.gameObject.SetActive(false);
+            playerUIGroup.alpha = 1;
+            playerUIGroup.interactable = true;
+            playerUIGroup.blocksRaycasts = true;
+
+            if (crosshair != null)
+                crosshair.SetVisibility(true);
+        }
+
+        public void SkipIntro()
+        {
+            if (isInit)
+            {
+                isInit = false;
+                hasBeenShown = true;
+
+                canvasGroup.gameObject.SetActive(false);
+                playerUIGroup.alpha = 1;
+                playerUIGroup.interactable = true;
+                playerUIGroup.blocksRaycasts = true;
+
+                if (crosshair != null)
+                    crosshair.SetVisibility(true);
+            }
         }
     }
 }
