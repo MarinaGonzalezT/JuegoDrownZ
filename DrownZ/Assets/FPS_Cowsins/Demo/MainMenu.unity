@@ -2186,7 +2186,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: KEY REBINDING
+  m_text: REAJUSTE DE TECLAS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -2384,7 +2384,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MASTER VOLUME
+  m_text: VOLUMEN GENERAL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -3566,7 +3566,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SENSITIVITY Y
+  m_text: SENSIBILIDAD Y
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -3702,7 +3702,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MAX FRAMERATE
+  m_text: MAXIMO FRAMERATE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -3751,7 +3751,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -4645,10 +4645,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Test your shooting skills and check some of the original features provided
-    by FPS ENGINE in the training range.
-
-'
+  m_text: "Testea tus habilidades de disparo y comprueba algunas caracter\xEDsticas
+    proporcionadas por FPS ENGINE en el campo de tiro."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
   m_sharedMaterial: {fileID: -511664650437432200, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
@@ -6207,7 +6205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: APPLY
+  m_text: APLICAR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -6256,7 +6254,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -7350,7 +7348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CONTROLS
+  m_text: CONTROLES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -7399,7 +7397,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -7535,7 +7533,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -7892,7 +7890,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Pulse tecla
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
   m_sharedMaterial: {fileID: -511664650437432200, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
@@ -8028,7 +8026,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Movement Facility
+  m_text: Centro de movimiento
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
   m_sharedMaterial: {fileID: -511664650437432200, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
@@ -8093,7 +8091,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -80.84476, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8423,7 +8421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PRESS ANYWHERE TO START
+  m_text: PULSA CUALQUIER TECLA PARA EMPEZAR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -8608,7 +8606,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -10549,7 +10547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SOUND
+  m_text: SONIDO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -10598,7 +10596,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -10685,7 +10683,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CONTROLLER SENS X
+  m_text: SENSIBILIDAD DE MANDO X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -10821,7 +10819,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RESET
+  m_text: REINICIO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -10870,7 +10868,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -11871,10 +11869,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Test the most recent movement features introduced in FPS ENGINE v.0.9.5!
-
-    You
-    can wall-run, double jump, dash, use grappling hooks, etc...'
+  m_text: "Testea los movimientos introducidos en la \xFAltima versi\xF3n de FPS
+    ENGINE v.0.9.5, donde podr\xE1s correr por las paredes, hacer doble salto, dash,
+    uso de gancho, etc."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
   m_sharedMaterial: {fileID: -511664650437432200, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
@@ -12175,7 +12172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SCREEN RESOLUTION
+  m_text: "RESOLUCI\xD3N DE PANTALLA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -12224,7 +12221,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -13172,7 +13169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CONTROLLER SENS Y
+  m_text: SENSIBILIDAD DE MANDO Y
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -14025,7 +14022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HOME
+  m_text: INICIO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -14901,10 +14898,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Immerse yourself in this first-person survival horror in which you will
-    face dangers you could never have imagined while trying to survive.
-
-'
+  m_text: "Sumergete en esta survival horror en primera persona donde te enfrentaras
+    a peligros que nunca habr\xEDas imaginado mientras intentas sobrevivir."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
   m_sharedMaterial: {fileID: -511664650437432200, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
@@ -16222,7 +16217,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: FULLSCREEN
+  m_text: PANTALLA COMPLETA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -16271,7 +16266,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -16358,7 +16353,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Training Range
+  m_text: Campo de tiro
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
   m_sharedMaterial: {fileID: -511664650437432200, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
@@ -17184,7 +17179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start Game
+  m_text: Comenzar aventura
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
   m_sharedMaterial: {fileID: -511664650437432200, guid: ab71b4296a7219543a3eda0f04eaabde, type: 2}
@@ -18028,7 +18023,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SENSITIVITY X
+  m_text: SENSIBILIDAD X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -18805,7 +18800,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -18928,7 +18923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GRAPHICS QUALITY
+  m_text: CALIDAD DE GRAFICOS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -18977,7 +18972,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -20381,7 +20376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cancel
+  m_text: 'Cancelar
 
 '
   m_isRightToLeft: 0
@@ -20870,7 +20865,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -22063,9 +22058,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SETTINGS
-
-'
+  m_text: AJUSTES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -23742,9 +23735,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press Key to Rebind
-
-'
+  m_text: Pulsa tecla para cambiar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
   m_sharedMaterial: {fileID: 2866433745113410533, guid: 8bb652ce1b8581a4dbab03c570abaa67, type: 2}
@@ -24660,7 +24651,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1

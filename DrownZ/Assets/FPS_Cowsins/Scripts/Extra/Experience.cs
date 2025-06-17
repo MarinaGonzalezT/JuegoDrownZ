@@ -34,8 +34,8 @@ namespace cowsins
             UIController.addXP?.Invoke();
 
             // Play SFX
-            // SoundManager.Instance.PlaySound(pickUpSFX, 0, 0, false, 0);
-            // UIController.instance.UpdateXPPanel();
+            SoundManager.Instance.PlaySound(pickUpSFX, 0, 0, false, 0);
+            UIController.instance.UpdateXPPanel();
             // Destroy the XP.
             Destroy(this.gameObject);
         }
