@@ -1,5 +1,5 @@
 /// <summary>
-/// This script belongs to cowsins™ as a part of the cowsins´ FPS Engine. All rights reserved. 
+/// This script belongs to cowsinsï¿½ as a part of the cowsinsï¿½ FPS Engine. All rights reserved. 
 /// </summary>
 using UnityEngine;
 using UnityEngine.Events;
@@ -55,13 +55,17 @@ namespace cowsins
 
         public Events events;
 
+        private float totalExperience;
+
         #endregion
 
         private void Start()
         {
             GetAllReferences();
             // Apply basic settings 
-            health = maxHealth;
+            health = PlayerPrefs.GetFloat("PlayerHealth");
+            if (health <= 0) health = maxHealth; // If health is not set, set it to maxHealth
+            PlayerPrefs.SetFloat("PlayerHealth", health);
             shield = maxShield;
             damageMultiplier = 1;
             healMultiplier = 1;
@@ -113,6 +117,7 @@ namespace cowsins
                 damage -= shield;
                 shield = 0;
                 health -= damage;
+                PlayerPrefs.SetFloat("PlayerHealth", health);
             }
 
             // Notify UI about the health change
@@ -143,6 +148,7 @@ namespace cowsins
             // Calculate effective healing for health
             float effectiveHealForHealth = Mathf.Min(adjustedHealAmount, maxHealth - health);
             health += effectiveHealForHealth;
+            PlayerPrefs.SetFloat("PlayerHealth", health);
 
             // Calculate remaining heal amount after health is full
             float remainingHeal = adjustedHealAmount - effectiveHealForHealth;
@@ -161,6 +167,7 @@ namespace cowsins
         {
             maxHealth += amount;
             health = maxHealth;
+            PlayerPrefs.SetFloat("PlayerHealth", health);
             UIEvents.onHealthChanged?.Invoke(health, shield, false);
         }
 
@@ -170,6 +177,8 @@ namespace cowsins
         private void Die()
         {
             isDead = true;
+            totalExperience = PlayerPrefs.GetFloat("TotalExperience");
+            ExperienceManager.instance?.RemoveExperience(totalExperience);
             events.OnDeath.Invoke(); // Invoke a custom event
         }
         /// <summary>
@@ -245,6 +254,7 @@ namespace cowsins
             isDead = false;
             states.ForceChangeState(states._States.Default());
             health = maxHealth;
+            PlayerPrefs.SetFloat("PlayerHealth", health);
             shield = maxShield;
             transform.position = respawnPosition;
             player.ResetStamina();
