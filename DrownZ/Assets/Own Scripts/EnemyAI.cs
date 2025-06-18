@@ -201,6 +201,13 @@ public class EnemyAI : MonoBehaviour
         animator.SetBool("isDead", true);
         animator.SetTrigger("die");
         agent.isStopped = true;
+
+        Collider[] colliders = GetComponentsInChildren<Collider>();
+        foreach (Collider collider in colliders)
+        {
+            collider.enabled = false;
+        }
+
         Invoke(nameof(DropExperience), 3f);
 
         return;
