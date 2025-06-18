@@ -82,5 +82,9 @@ namespace cowsins
             return totalExperience - previousLevelExperience;
         }
 
+        public float GetTotalExperience()
+        {
+            return totalExperience;
+        }
     }
 }

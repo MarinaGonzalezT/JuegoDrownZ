@@ -136,15 +136,22 @@ namespace cowsins
                 healthStatesEffect.color.b, 0)) healthStatesEffect.color -= new Color(0, 0, 0, Time.deltaTime * fadeOutTime);
 
             // EXPERIENCE
-            // Calculate the target XP value
             if (ExperienceManager.instance.useExperience)
-            {  // Calculate the target XP value
-                float targetXp = ExperienceManager.instance.GetCurrentExperience() / ExperienceManager.instance.experienceRequirements[ExperienceManager.instance.playerLevel];
+            {
+                int level = ExperienceManager.instance.playerLevel;
+                float[] xpReq = ExperienceManager.instance.experienceRequirements;
 
-                // Lerp the XP image fill amount towards the target XP value
+                float prevXp = level > 0 ? xpReq[level - 1] : 0;
+                float nextXp = xpReq[level];
+
+                float currentTotalXp = ExperienceManager.instance.GetTotalExperience();
+                float currentLevelXp = currentTotalXp - prevXp;
+                float requiredLevelXp = nextXp - prevXp;
+
+                float targetXp = currentLevelXp / requiredLevelXp;
+
                 xpImage.fillAmount = Mathf.Lerp(xpImage.fillAmount, targetXp, lerpXpSpeed * Time.deltaTime);
             }
-
 
             // Handle Inspection UI
             if (intManager.inspecting)

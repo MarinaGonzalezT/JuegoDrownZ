@@ -130,6 +130,7 @@ namespace cowsins
 
         IEnumerator ShowLogoAndFinish()
         {
+            skipButton.SetActive(false);
             logoImage.gameObject.SetActive(true);
             Color color = logoImage.color;
             color.a = 0;
