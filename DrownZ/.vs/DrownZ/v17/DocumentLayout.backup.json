@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|c:\\users\\marinagt\\documents\\juegofinalpv\\juegodrownz\\drownz\\assets\\fps_cowsins\\scripts\\pickupsystem\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\fps_cowsins\\scripts\\pickupsystem\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\assets\\own scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\own scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|c:\\users\\marinagt\\documents\\juegofinalpv\\juegodrownz\\drownz\\assets\\own scripts\\letter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\own scripts\\letter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\assets\\own scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\own scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\assets\\own scripts\\intronarrative.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\own scripts\\intronarrative.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\assets\\fps_cowsins\\scripts\\pickupsystem\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\fps_cowsins\\scripts\\pickupsystem\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IntroNarrative.cs",
+              "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\IntroNarrative.cs",
+              "RelativeDocumentMoniker": "Assets\\Own Scripts\\IntroNarrative.cs",
+              "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\IntroNarrative.cs",
+              "RelativeToolTip": "Assets\\Own Scripts\\IntroNarrative.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwFcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:32:57.324Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -32,35 +48,35 @@
               "RelativeDocumentMoniker": "Assets\\Own Scripts\\Letter.cs",
               "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\Letter.cs",
               "RelativeToolTip": "Assets\\Own Scripts\\Letter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwA0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T16:12:15.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Interactable.cs",
               "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\PickUpSystem\\Interactable.cs",
               "RelativeDocumentMoniker": "Assets\\FPS_Cowsins\\Scripts\\PickUpSystem\\Interactable.cs",
               "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\PickUpSystem\\Interactable.cs",
               "RelativeToolTip": "Assets\\FPS_Cowsins\\Scripts\\PickUpSystem\\Interactable.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAywDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAkwFcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T16:08:09.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T16:08:09.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "EnemyAI.cs",
               "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\EnemyAI.cs",
               "RelativeDocumentMoniker": "Assets\\Own Scripts\\EnemyAI.cs",
               "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\EnemyAI.cs",
               "RelativeToolTip": "Assets\\Own Scripts\\EnemyAI.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAiwNAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAUwNAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T14:24:22.799Z"
+              "WhenOpened": "2025-06-18T14:24:22.799Z",
+              "EditorCaption": ""
             }
           ]
         }

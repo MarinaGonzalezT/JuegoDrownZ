@@ -60,6 +60,7 @@ MonoBehaviour:
   waitTime: 2.5
   experiencePrefabs: {fileID: 3821068731288931261, guid: 5144d72f9767e2f4aacd4ed8fdf87ad0, type: 3}
   countXP: 5
+  speed: 5
 --- !u!195 &1603567249573327731
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class EnemyAI : MonoBehaviour
     public float waitTime = 2f;
     public GameObject experiencePrefabs;
     public int countXP = 1;
+    public float speed = 4.2f;
 
     private bool isWaiting = false;
     private float waitTimer = 0f;
@@ -88,7 +89,7 @@ public class EnemyAI : MonoBehaviour
             }
             
             agent.isStopped = false;
-            agent.speed = 4.2f;
+            agent.speed = speed;
             agent.SetDestination(player.position);
         }
         else
@@ -219,7 +220,7 @@ public class EnemyAI : MonoBehaviour
         isChasing = true;
         agent.isStopped = false;
         animator.SetBool("seePlayer", true);
-        agent.speed = 4.2f;
+        agent.speed = speed;
         agent.SetDestination(player.position);
     }
 
