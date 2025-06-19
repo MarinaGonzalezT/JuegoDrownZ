@@ -127,7 +127,7 @@ namespace cowsins
                 shield = 0;
                 health -= damage;
             }
-
+            GetComponent<EnemyAI>()?.ForceChasePlayer();
             // Custom event on damaged
             events.OnDamaged.Invoke();
             UIEvents.onEnemyHit?.Invoke(isHeadshot);

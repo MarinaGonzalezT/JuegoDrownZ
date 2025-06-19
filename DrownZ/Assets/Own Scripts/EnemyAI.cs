@@ -34,7 +34,8 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
-        if(gameObject.name.Contains("Creep"))
+        EnemyAlertSystem.allEnemies.Add(this);
+        if (gameObject.name.Contains("Creep"))
         {
             animator = GetComponentInChildren<Animator>();
         }
@@ -42,7 +43,7 @@ public class EnemyAI : MonoBehaviour
         {
             animator = GetComponent<Animator>();
         }
-        
+
         agent = GetComponent<NavMeshAgent>();
 
         if (patrolPoints.Length > 0)
@@ -81,13 +82,13 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("isAttacking", false);
 
             Sonidos soundManager = GetComponent<Sonidos>();
-    
+
             if (soundManager != null && !reproducido)
             {
                 soundManager.ReproducirSonidoGhoul();
                 reproducido = true;
             }
-            
+
             agent.isStopped = false;
             agent.speed = speed;
             agent.SetDestination(player.position);
@@ -145,7 +146,7 @@ public class EnemyAI : MonoBehaviour
         animator.SetBool("seePlayer", false);
         animator.SetBool("isAttacking", false);
 
-        if(!isReturning)
+        if (!isReturning)
         {
             waitTimer += Time.deltaTime;
 
@@ -209,19 +210,29 @@ public class EnemyAI : MonoBehaviour
             collider.enabled = false;
         }
 
+        EnemyAlertSystem.allEnemies.Remove(this);
+
         Invoke(nameof(DropExperience), 3f);
 
         return;
     }
 
-    public void ForceChasePlayer()
+    public void ForceChasePlayer(bool alertOthers = true)
     {
+        if (isDead) return;
+
         isAttacked = true;
         isChasing = true;
         agent.isStopped = false;
         animator.SetBool("seePlayer", true);
         agent.speed = speed;
         agent.SetDestination(player.position);
+
+        if (alertOthers)
+        {
+            float alertRadius = 15f;
+            EnemyAlertSystem.AlertNearbyEnemies(transform.position, alertRadius);
+        }
     }
 
     private void DropExperience()
@@ -238,5 +249,10 @@ public class EnemyAI : MonoBehaviour
                 Quaternion.identity
              );
         }
+    }
+    
+    public bool IsDead()
+    {
+        return isDead;
     }
 }
