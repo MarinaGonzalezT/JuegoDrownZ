@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\assets\\own scripts\\letter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\own scripts\\letter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\assets\\fps_cowsins\\scripts\\pickupsystem\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\fps_cowsins\\scripts\\pickupsystem\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\assets\\fps_cowsins\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\fps_cowsins\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,11 +23,7 @@
       "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\own scripts\\creditscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|c:\\users\\marinagt\\documents\\juegofinalpv\\juegodrownz\\drownz\\assets\\fps_cowsins\\scripts\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\fps_cowsins\\scripts\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|c:\\users\\marinagt\\documents\\juegofinalpv\\juegodrownz\\drownz\\assets\\fps_cowsins\\scripts\\extra\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\assets\\fps_cowsins\\scripts\\extra\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40F1BDF5-874F-4389-A393-F0D6D6FD8546}|Assembly-CSharp.csproj|solutionrelative:assets\\fps_cowsins\\scripts\\extra\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,24 +34,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InputManager.cs",
-              "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\Managers\\InputManager.cs",
-              "RelativeDocumentMoniker": "Assets\\FPS_Cowsins\\Scripts\\Managers\\InputManager.cs",
-              "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\Managers\\InputManager.cs",
-              "RelativeToolTip": "Assets\\FPS_Cowsins\\Scripts\\Managers\\InputManager.cs",
-              "ViewState": "AgIAAIEBAAAAAAAAAAAqwJkBAAA8AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Interactable.cs",
+              "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\PickUpSystem\\Interactable.cs",
+              "RelativeDocumentMoniker": "Assets\\FPS_Cowsins\\Scripts\\PickUpSystem\\Interactable.cs",
+              "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\PickUpSystem\\Interactable.cs",
+              "RelativeToolTip": "Assets\\FPS_Cowsins\\Scripts\\PickUpSystem\\Interactable.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAqwE4AAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:40:13.1Z",
+              "WhenOpened": "2025-06-20T17:12:22.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Letter.cs",
+              "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\Letter.cs",
+              "RelativeDocumentMoniker": "Assets\\Own Scripts\\Letter.cs",
+              "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\Letter.cs",
+              "RelativeToolTip": "Assets\\Own Scripts\\Letter.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwE8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T17:12:04.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\Extra\\PauseMenu.cs",
               "RelativeDocumentMoniker": "Assets\\FPS_Cowsins\\Scripts\\Extra\\PauseMenu.cs",
@@ -55,25 +72,23 @@
               "RelativeToolTip": "Assets\\FPS_Cowsins\\Scripts\\Extra\\PauseMenu.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAuwFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T10:55:33.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T10:55:33.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PlayerStats.cs",
               "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\Player\\PlayerStats.cs",
               "RelativeDocumentMoniker": "Assets\\FPS_Cowsins\\Scripts\\Player\\PlayerStats.cs",
               "ToolTip": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\FPS_Cowsins\\Scripts\\Player\\PlayerStats.cs",
               "RelativeToolTip": "Assets\\FPS_Cowsins\\Scripts\\Player\\PlayerStats.cs",
-              "ViewState": "AgIAAOwAAAAAAAAAAADwv/0AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAPoAAAAAAAAAAEBUwP0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T10:05:42.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T10:05:42.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IntroNarrative.cs",
               "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\IntroNarrative.cs",
               "RelativeDocumentMoniker": "Assets\\Own Scripts\\IntroNarrative.cs",
@@ -81,12 +96,11 @@
               "RelativeToolTip": "Assets\\Own Scripts\\IntroNarrative.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAA5wKEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T18:23:57.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T18:23:57.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CreditsController.cs",
               "DocumentMoniker": "C:\\Users\\MarinaGT\\Documents\\JuegoFinalPV\\JuegoDrownZ\\DrownZ\\Assets\\Own Scripts\\CreditsController.cs",
               "RelativeDocumentMoniker": "Assets\\Own Scripts\\CreditsController.cs",
@@ -94,8 +108,7 @@
               "RelativeToolTip": "Assets\\Own Scripts\\CreditsController.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAIwGYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T17:18:44.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T17:18:44.696Z"
             }
           ]
         }
