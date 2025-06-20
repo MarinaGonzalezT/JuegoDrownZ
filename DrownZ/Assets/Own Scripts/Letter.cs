@@ -10,13 +10,15 @@ namespace cowsins
         [SerializeField] private Crosshair crosshair;
         public GameObject letter;
         private PlayerStats playerStats;
-        public float letterDuration = 8f;
         public string creditsSceneName = "EscenaCreditos";
+        public static bool isLetterOpen { get; private set; }
 
         private void Start()
         {
             if (letter != null)
                 letter.SetActive(false);
+
+            isLetterOpen = false;
         }
 
         public void ShowLetter()
@@ -26,6 +28,7 @@ namespace cowsins
 
         private IEnumerator ShowLetterRoutine()
         {
+            isLetterOpen = true;
             letter.SetActive(true);
 
             Cursor.lockState = CursorLockMode.None;
@@ -49,6 +52,12 @@ namespace cowsins
 
         public void GoToCredits()
         {
+            Resume();
+            SceneManager.LoadScene(creditsSceneName);
+        }
+
+        public void Resume()
+        {
             letter.SetActive(false);
 
             playerUIGroup.alpha = 1;
@@ -67,7 +76,7 @@ namespace cowsins
                 playerStats.CheckIfCanGrantControl();
             }
 
-            SceneManager.LoadScene(creditsSceneName);
+            isLetterOpen = false;
         }
     }
 }

@@ -407,7 +407,7 @@ namespace cowsins
 
         private void TogglePause()
         {
-            if (IntroNarrative.isInit) return;
+            if (IntroNarrative.isInit || Letter.isLetterOpen) return;
             if (PauseMenu.Instance)
                 PauseMenu.Instance.TogglePause();
         }

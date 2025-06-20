@@ -101,6 +101,11 @@ public class CreditsManager : MonoBehaviour
     public void ReturnToMainMenu()
     {
         PlayerPrefs.DeleteAll();
+
+        System.Type introType = typeof(cowsins.IntroNarrative);
+        var field = introType.GetField("hasBeenShown", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
+        if (field != null) field.SetValue(null, false);
+
         SceneManager.LoadScene("MainMenu");
     }
 }
