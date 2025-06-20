@@ -65,7 +65,7 @@ namespace cowsins
             // Apply basic settings 
             health = PlayerPrefs.GetFloat("PlayerHealth");
             if (health <= 0) health = maxHealth; // If health is not set, set it to maxHealth
-            PlayerPrefs.SetFloat("PlayerHealth", health);
+            
             shield = maxShield;
             damageMultiplier = 1;
             healMultiplier = 1;
@@ -117,7 +117,6 @@ namespace cowsins
                 damage -= shield;
                 shield = 0;
                 health -= damage;
-                PlayerPrefs.SetFloat("PlayerHealth", health);
             }
 
             // Notify UI about the health change
@@ -131,6 +130,12 @@ namespace cowsins
             }
         }
 
+        public void SavePlayerData()
+        {
+            PlayerPrefs.SetFloat("PlayerHealth", health);
+            PlayerPrefs.SetFloat("TotalExperience", ExperienceManager.instance.GetTotalExperience());
+            PlayerPrefs.SetInt("PlayerLevel", ExperienceManager.instance.playerLevel);
+        }
 
         public void Heal(float healAmount)
         {
@@ -148,7 +153,6 @@ namespace cowsins
             // Calculate effective healing for health
             float effectiveHealForHealth = Mathf.Min(adjustedHealAmount, maxHealth - health);
             health += effectiveHealForHealth;
-            PlayerPrefs.SetFloat("PlayerHealth", health);
 
             // Calculate remaining heal amount after health is full
             float remainingHeal = adjustedHealAmount - effectiveHealForHealth;
@@ -167,7 +171,7 @@ namespace cowsins
         {
             maxHealth += amount;
             health = maxHealth;
-            PlayerPrefs.SetFloat("PlayerHealth", health);
+
             UIEvents.onHealthChanged?.Invoke(health, shield, false);
         }
 
@@ -177,8 +181,10 @@ namespace cowsins
         private void Die()
         {
             isDead = true;
-            totalExperience = PlayerPrefs.GetFloat("TotalExperience");
-            ExperienceManager.instance?.RemoveExperience(totalExperience);
+            PlayerPrefs.DeleteKey("TotalExperience");
+            PlayerPrefs.DeleteKey("PlayerLevel");
+            PlayerPrefs.DeleteKey("PlayerHealth");
+
             events.OnDeath.Invoke(); // Invoke a custom event
         }
         /// <summary>
@@ -254,7 +260,6 @@ namespace cowsins
             isDead = false;
             states.ForceChangeState(states._States.Default());
             health = maxHealth;
-            PlayerPrefs.SetFloat("PlayerHealth", health);
             shield = maxShield;
             transform.position = respawnPosition;
             player.ResetStamina();
